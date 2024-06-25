@@ -12,7 +12,7 @@ body {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
   text-align: center;
 }
@@ -21,7 +21,8 @@ body {
   margin-bottom: 15px;
 }
 
-input[type="number"], button {
+input[type="number"],
+button {
   padding: 8px;
   margin-top: 5px;
   border: 1px solid #ccc;
@@ -31,7 +32,7 @@ input[type="number"], button {
 
 button {
   cursor: pointer;
-  background-color: #4CAF50;
+  background-color: "#4caf50";
   color: white;
   border: none;
 }
