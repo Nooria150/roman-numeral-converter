@@ -1,23 +1,3 @@
-document.getElementById('convert-btn').addEventListener('click', () => {
-  const numberInput = document.getElementById('number').value.trim();
-  const outputElement = document.getElementById('output');
-
-  if (numberInput === '') {
-    outputElement.textContent = 'Please enter a valid number';
-    return;
-  }
-
-  const num = parseInt(numberInput, 10);
-
-  if (Number.isNaN(num) || num < 1) {
-    outputElement.textContent = 'Please enter a number greater than or equal to 1';
-  } else if (num >= 4000) {
-    outputElement.textContent = 'Please enter a number less than or equal to 3999';
-  } else {
-    outputElement.textContent = intToRoman(num);
-  }
-});
-
 function intToRoman(num) {
   const romanMap = [
     { value: 1000, numeral: 'M' },
@@ -46,3 +26,22 @@ function intToRoman(num) {
 
   return result;
 }
+document.getElementById('convert-btn').addEventListener('click', () => {
+  const numberInput = document.getElementById('number').value.trim();
+  const outputElement = document.getElementById('output');
+
+  if (numberInput === '') {
+    outputElement.textContent = 'Please enter a valid number';
+    return;
+  }
+
+  const num = parseInt(numberInput, 10);
+
+  if (Number.isNaN(num) || num < 1) {
+    outputElement.textContent = 'Please enter a number greater than or equal to 1';
+  } else if (num >= 4000) {
+    outputElement.textContent = 'Please enter a number less than or equal to 3999';
+  } else {
+    outputElement.textContent = intToRoman(num);
+  }
+});
