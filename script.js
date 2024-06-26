@@ -37,7 +37,7 @@ function intToRoman(num) {
 
   let result = '';
 
-  for (let i = 0; i < romanMap.length; i++) {
+  for (let i = 0; i < romanMap.length; i+=1) {
     while (num >= romanMap[i].value) {
       result += romanMap[i].numeral;
       num -= romanMap[i].value;
